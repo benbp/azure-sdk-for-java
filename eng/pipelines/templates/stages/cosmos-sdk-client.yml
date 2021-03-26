@@ -38,15 +38,10 @@ stages:
           - template: ../steps/install-reporting-tools.yml
         MatrixConfigs:
           - Name: Cosmos_ci_test
-            Path: eng/pipelines/templates/stages/platform-matrix.json
+            Path: eng/pipelines/templates/stages/cosmos-matrix.json
             Selection: sparse
             NonSparseParameters: Agent
             GenerateVMJobs: true
-        MatrixFilters:
-          - TestFromSource=^$
-        MatrixReplace:
-          - TestOptions=.*/-Punit
-          - AZURE_TEST.*=.*/
 
   - stage: TestEmulator
     displayName: Test Emulator

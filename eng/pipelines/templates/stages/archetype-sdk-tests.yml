@@ -87,7 +87,7 @@ parameters:
   type: object
   default:
     - Name: Java_live_test_base
-      Path: eng/pipelines/templates/stages/platform-matrix.json
+      Path: eng/pipelines/templates/stages/client-matrix.json
       Selection: sparse
       GenerateVMJobs: true
 - name: AdditionalMatrixConfigs

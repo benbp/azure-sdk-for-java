@@ -1,7 +1,4 @@
 {
-  "displayNames": {
-    "true": "TestFromSource"
-  },
   "matrix": {
     "Agent": {
       "ubuntu-18.04": { "OSVmImage": "MMSUbuntu18.04", "Pool": "azsdk-pool-mms-ubuntu-1804-general" },
@@ -9,8 +6,6 @@
       "macOS-10.15": { "OSVmImage": "macOS-10.15", "Pool": "Azure Pipelines" }
     },
     "JavaTestVersion": [ "1.8", "1.11" ],
-    "AZURE_TEST_HTTP_CLIENTS": [ "okhttp", "netty" ],
-    "TestGoals": "surefire:test",
-    "TestOptions": ""
+    "AZURE_TEST_HTTP_CLIENTS": [ "okhttp", "netty" ]
   }
 }
