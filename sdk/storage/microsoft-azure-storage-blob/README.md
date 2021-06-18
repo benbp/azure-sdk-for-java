@@ -178,7 +178,7 @@ If you would like to become an active contributor to this project please follow 
 
 If you encounter any bugs with the library please file an issue in the [Issues](https://github.com/Azure/azure-storage-java/issues) section of the project.
 
-When sending pull requests, please send non-breaking PRs to the dev branch and breaking changes to the dev_breaking branch. Do not make PRs against master.
+When sending pull requests, please send non-breaking PRs to the dev branch and breaking changes to the dev_breaking branch. Do not make PRs against main.
 
 # Learn More
 

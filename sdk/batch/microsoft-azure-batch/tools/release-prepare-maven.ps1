@@ -37,7 +37,7 @@ Param(
     [string]$snapshot
 )
 
-$branch = "master"
+$branch = "main"
 
 # Check branch
 echo "Checking if you are on $branch branch..."

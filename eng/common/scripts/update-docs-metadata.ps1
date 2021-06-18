@@ -24,7 +24,7 @@ param (
 
 . (Join-Path $PSScriptRoot common.ps1)
 
-$releaseReplaceRegex = "(https://github.com/$RepoId/(?:blob|tree)/)master"
+$releaseReplaceRegex = "(https://github.com/$RepoId/(?:blob|tree)/)main"
 
 function GetMetaData {
   if (Test-Path Variable:MetadataUri) {
@@ -67,7 +67,7 @@ function GetAdjustedReadmeContent($pkgInfo){
       $fileContent = $fileContent -replace $titleRegex, "`${0} - Version $($pkgInfo.PackageVersion) `n"
       $foundTitle = $matches["filetitle"]
     }
-    # Replace github master link with release tag.
+    # Replace github main link with release tag.
     $ReplacementPattern = "`${1}$($pkgInfo.Tag)"
     $fileContent = $fileContent -replace $releaseReplaceRegex, $ReplacementPattern
   
